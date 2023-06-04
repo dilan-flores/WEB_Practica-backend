@@ -4,7 +4,7 @@
   "description": "Despliegue de un backend en un ambiente de producción (Render)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "author": "dilan-flores <dilan.flores@epn.edu.ec>",
   "license": "ISC",
