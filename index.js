@@ -4,7 +4,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/',(req,res)=>{
-    res.send("Landing page - Grupo # 2")
+    res.send("Página principal - Grupo # 1")
+})
+
+app.get('/',(req,res)=>{
+    
 })
 
 app.get('/integrantes',(req,res)=>{
@@ -14,13 +18,38 @@ app.get('/integrantes',(req,res)=>{
             "apellido":"Flores",
             "edad":21
         },
+        {
+            "nombre":"Mateo",
+            "apellido":"Congo",
+            "edad":21
+        },
+        {
+            "nombre":"Elian ",
+            "apellido":"Moreira",
+            "edad":20
+        },
+        {
+            "nombre":"Erick",
+            "apellido":"Palomo",
+            "edad":21
+        },
+        {
+            "nombre":"Erick",
+            "apellido":"Santillan",
+            "edad":21
+        },
+        {
+            "nombre":"Pablo",
+            "apellido":"Uchuari",
+            "edad":23
+        },
     ])
 })
 
 app.get('/productos',(req,res)=>{
     res.send(`
         <h1>Catálogo de productos</h1>
-                <p>Bienvenidos</p>
+            <p>Bienvenidos</p>
     `)
 })
 
